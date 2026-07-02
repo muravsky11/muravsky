@@ -4,18 +4,16 @@ function updateCountdown() {
   const now = new Date().getTime();
   const distance = dropDate - now;
 
-  if (distance < 0) return;
+  if (distance <= 0) {
+    document.querySelector(".countdown").innerHTML = "<p>DROP IS LIVE</p>";
+    return;
+  }
 
-  const days = Math.floor(distance / (1000 * 60 * 60 * 24));
-  const hours = Math.floor((distance / (1000 * 60 * 60)) % 24);
-  const minutes = Math.floor((distance / (1000 * 60)) % 60);
-  const seconds = Math.floor((distance / 1000) % 60);
-
-  document.getElementById("days").innerText = days;
-  document.getElementById("hours").innerText = hours;
-  document.getElementById("minutes").innerText = minutes;
-  document.getElementById("seconds").innerText = seconds;
+  document.getElementById("days").innerText = Math.floor(distance / (1000 * 60 * 60 * 24));
+  document.getElementById("hours").innerText = Math.floor((distance / (1000 * 60 * 60)) % 24);
+  document.getElementById("minutes").innerText = Math.floor((distance / (1000 * 60)) % 60);
+  document.getElementById("seconds").innerText = Math.floor((distance / 1000) % 60);
 }
 
-setInterval(updateCountdown, 1000);
 updateCountdown();
+setInterval(updateCountdown, 1000);
