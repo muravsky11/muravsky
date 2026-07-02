@@ -124,20 +124,75 @@ h1 {
   text-transform: uppercase;
 }
 
-.section {
-  min-height: 90vh;
-  padding: 150px 42px;
+.drop-product {
+  min-height: 100vh;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  background: #050505;
+  border-top: 1px solid #171717;
+  border-bottom: 1px solid #171717;
+}
+
+.drop-info {
+  padding: 150px 7vw;
   display: flex;
   flex-direction: column;
   justify-content: center;
 }
 
+.drop-info p {
+  max-width: 520px;
+  color: #bdb6ad;
+  font-size: 18px;
+  line-height: 1.7;
+}
+
+.product-visual {
+  min-height: 100vh;
+  background: #0b0b0b;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.product-visual img {
+  width: 82%;
+  height: auto;
+  object-fit: contain;
+  filter: contrast(1.05);
+}
+
+.section {
+  min-height: 90vh;
+  padding: 140px 7vw;
+}
+
 .about {
-  max-width: 900px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 7vw;
+  align-items: center;
+  background: #d8d0c4;
+  color: #050505;
+}
+
+.about-image img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+.about .eyebrow {
+  color: #5f5851;
+}
+
+.about p {
+  color: #2d2a27;
 }
 
 h2 {
-  font-size: clamp(48px, 8vw, 110px);
+  font-size: clamp(42px, 7vw, 96px);
   font-weight: 300;
   letter-spacing: -5px;
   line-height: 0.95;
@@ -146,14 +201,8 @@ h2 {
 
 .section p {
   max-width: 650px;
-  color: #bdb6ad;
   font-size: 18px;
   line-height: 1.7;
-}
-
-.drop {
-  border-top: 1px solid #171717;
-  border-bottom: 1px solid #171717;
 }
 
 .countdown {
@@ -164,11 +213,9 @@ h2 {
 }
 
 .countdown div {
-  min-width: 130px;
-  padding: 28px;
-  border: 1px solid #242424;
-  background: #080808;
-  text-align: center;
+  min-width: 120px;
+  padding: 24px;
+  border-left: 1px solid #2f2f2f;
 }
 
 .countdown span {
@@ -183,10 +230,21 @@ h2 {
   text-transform: uppercase;
 }
 
+.waitlist {
+  min-height: 60vh;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 7vw;
+  align-items: center;
+  border-top: 1px solid #171717;
+}
+
+.waitlist p {
+  color: #bdb6ad;
+}
+
 .waitlist form {
-  margin-top: 38px;
   display: flex;
-  max-width: 560px;
   gap: 12px;
 }
 
@@ -217,9 +275,10 @@ footer {
   font-size: 12px;
   letter-spacing: 2px;
   text-transform: uppercase;
+  border-top: 1px solid #171717;
 }
 
-@media (max-width: 760px) {
+@media (max-width: 860px) {
   .nav {
     padding: 22px;
   }
@@ -232,8 +291,23 @@ footer {
     letter-spacing: -4px;
   }
 
+  .drop-product,
+  .about,
+  .waitlist {
+    grid-template-columns: 1fr;
+  }
+
+  .drop-info,
   .section {
     padding: 110px 24px;
+  }
+
+  .product-visual {
+    min-height: 70vh;
+  }
+
+  .product-visual img {
+    width: 90%;
   }
 
   .waitlist form {

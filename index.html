@@ -1,197 +1,119 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Atelier | Drop 001</title>
 
-    <title>Atelier | Drop 001</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
 
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
-
-    <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
 <div class="loader">
-    <span>Atelier</span>
+  <span>Atelier</span>
 </div>
 
 <header class="nav">
+  <a href="#" class="brand">Atelier</a>
 
-    <a href="#" class="brand">Atelier</a>
-
-    <nav>
-
-        <a href="#drop">Drop 001</a>
-        <a href="#about">About</a>
-        <a href="#waitlist">Join</a>
-
-    </nav>
-
+  <nav>
+    <a href="#drop">Drop 001</a>
+    <a href="#about">About</a>
+    <a href="#waitlist">Join</a>
+  </nav>
 </header>
 
 <section class="hero">
+  <div class="hero-overlay"></div>
 
-    <div class="hero-overlay"></div>
+  <div class="hero-content">
+    <p class="eyebrow">LIMITED COLLECTION</p>
+    <h1>Atelier</h1>
+    <p class="hero-bottom">Drop 001 — Autumn 2026</p>
+  </div>
 
-    <div class="hero-content">
-
-        <p class="eyebrow">
-            LIMITED COLLECTION
-        </p>
-
-        <h1>
-            Atelier
-        </h1>
-
-        <p class="hero-bottom">
-            Drop 001 — Autumn 2026
-        </p>
-
-    </div>
-
-    <a href="#about" class="scroll">
-        Scroll
-    </a>
-
+  <a href="#drop" class="scroll">Scroll</a>
 </section>
 
-<section class="section about" id="about">
+<section class="drop-product" id="drop">
+  <div class="drop-info">
+    <p class="eyebrow">COMING SOON</p>
 
-    <p class="eyebrow">
-        THE IDEA
-    </p>
-
-    <h2>
-        Quiet pieces.<br>
-        Strong presence.
-    </h2>
+    <h2>Drop 001</h2>
 
     <p>
-
-        Atelier creates minimal garments built around clean silhouettes,
-        premium fabrics and timeless design.
-
-        Every collection is produced in limited quantities.
-
-        No loud branding.
-
-        No trends.
-
-        Only timeless essentials.
-
-    </p>
-
-</section>
-
-<section class="section drop" id="drop">
-
-    <p class="eyebrow">
-        COMING SOON
-    </p>
-
-    <h2>
-        Drop 001
-    </h2>
-
-    <p>
-
-        Early access will only be available for members of the waiting list.
-
+      The first collection. Limited quantities.
+      Timeless pieces designed to last.
+      Early access only for the waiting list.
     </p>
 
     <div class="countdown">
-
-        <div>
-
-            <span id="days">00</span>
-
-            <small>DAYS</small>
-
-        </div>
-
-        <div>
-
-            <span id="hours">00</span>
-
-            <small>HOURS</small>
-
-        </div>
-
-        <div>
-
-            <span id="minutes">00</span>
-
-            <small>MIN</small>
-
-        </div>
-
-        <div>
-
-            <span id="seconds">00</span>
-
-            <small>SEC</small>
-
-        </div>
-
+      <div><span id="days">00</span><small>DAYS</small></div>
+      <div><span id="hours">00</span><small>HOURS</small></div>
+      <div><span id="minutes">00</span><small>MIN</small></div>
+      <div><span id="seconds">00</span><small>SEC</small></div>
     </div>
+  </div>
 
+  <div class="product-visual">
+    <img src="assets/hoodie.jpg" alt="Atelier Drop 001 hoodie">
+  </div>
 </section>
 
-<section class="section waitlist" id="waitlist">
+<section class="section about" id="about">
+  <div class="about-image">
+    <img src="assets/hoodie.jpg" alt="Atelier black hoodie">
+  </div>
 
-    <p class="eyebrow">
-        EARLY ACCESS
-    </p>
+  <div class="about-text">
+    <p class="eyebrow">THE IDEA</p>
 
     <h2>
-        Join the waiting list.
+      Quiet pieces.<br>
+      Strong presence.
     </h2>
 
     <p>
-
-        Be the first to access Drop 001 before the public release.
-
+      Atelier creates minimal garments built around clean silhouettes,
+      premium fabrics and timeless design. No loud branding. No trends.
+      Only timeless essentials.
     </p>
+  </div>
+</section>
 
-    <form action="https://formspree.io/f/xzdlkgja" method="POST">
+<section class="section waitlist" id="waitlist">
+  <div>
+    <p class="eyebrow">EARLY ACCESS</p>
 
-        <input
-            type="email"
-            name="email"
-            placeholder="Email address"
-            required
-        >
+    <h2>Join the waiting list.</h2>
 
-        <button type="submit">
-            JOIN
-        </button>
+    <p>
+      Be the first to access Drop 001 before the public release.
+    </p>
+  </div>
 
-    </form>
+  <form action="https://formspree.io/f/xzdlkgja" method="POST">
+    <input
+      type="email"
+      name="email"
+      placeholder="Email address"
+      required
+    >
 
+    <button type="submit">JOIN</button>
+  </form>
 </section>
 
 <footer>
-
-    <p>
-
-        © Atelier
-
-    </p>
-
-    <p>
-
-        Designed in limited quantities.
-
-    </p>
-
+  <p>© Atelier</p>
+  <p>Designed in limited quantities.</p>
 </footer>
 
 <script src="script.js"></script>
-
 </body>
 </html>
