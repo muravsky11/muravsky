@@ -1,119 +1,139 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pl">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Atelier | Drop 001</title>
+  <title>Atelier</title>
+  <meta
+    name="description"
+    content="Atelier — limitowany obiekt do noszenia. Ciemna forma, mocna obecność, zero powtórek."
+  >
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap"
+    rel="stylesheet"
+  >
 
   <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
-
-<div class="loader">
-  <span>Atelier</span>
-</div>
-
-<header class="nav">
-  <a href="#" class="brand">Atelier</a>
-
-  <nav>
-    <a href="#drop">Drop 001</a>
-    <a href="#about">About</a>
-    <a href="#waitlist">Join</a>
-  </nav>
-</header>
-
-<section class="hero">
-  <div class="hero-overlay"></div>
-
-  <div class="hero-content">
-    <p class="eyebrow">LIMITED COLLECTION</p>
-    <h1>Atelier</h1>
-    <p class="hero-bottom">Drop 001 — Autumn 2026</p>
+  <div class="loader" aria-hidden="true">
+    <span>ATELIER</span>
   </div>
 
-  <a href="#drop" class="scroll">Scroll</a>
-</section>
+  <header class="nav">
+    <a href="#top" class="brand">ATELIER</a>
 
-<section class="drop-product" id="drop">
-  <div class="drop-info">
-    <p class="eyebrow">COMING SOON</p>
+    <nav aria-label="Główna nawigacja">
+      <a href="#drop">Bluza</a>
+      <a href="#idea">Idea</a>
+      <a href="#about">O marce</a>
+      <a href="#waitlist">Waitlist</a>
+    </nav>
+  </header>
 
-    <h2>Drop 001</h2>
+  <main>
+    <section class="hero" id="top">
+      <img
+        class="hero-image"
+        src="https://laetitiadelavillehuchet.com/clients/1363/fichiers/photos/620f7963c059c.jpg"
+        alt=""
+        aria-hidden="true"
+        fetchpriority="high"
+      >
 
-    <p>
-      The first collection. Limited quantities.
-      Timeless pieces designed to last.
-      Early access only for the waiting list.
-    </p>
+      <div class="hero-overlay"></div>
 
-    <div class="countdown">
-      <div><span id="days">00</span><small>DAYS</small></div>
-      <div><span id="hours">00</span><small>HOURS</small></div>
-      <div><span id="minutes">00</span><small>MIN</small></div>
-      <div><span id="seconds">00</span><small>SEC</small></div>
-    </div>
-  </div>
+      <div class="hero-content">
+        <p class="eyebrow">Drop 01 / Atelier object</p>
+        <h1>ATELIER</h1>
+        <p class="hero-copy">
+          Nie kolejny basic. Jedna forma, jeden charakter, jedna obecność.
+        </p>
+        <p class="hero-bottom">Black hoodie / Quiet force / Limited piece</p>
+      </div>
 
-  <div class="product-visual">
-    <img src="assets/hoodie.jpg" alt="Atelier Drop 001 hoodie">
-  </div>
-</section>
+      <a class="scroll" href="#drop">Scroll</a>
+    </section>
 
-<section class="section about" id="about">
-  <div class="about-image">
-    <img src="assets/hoodie.jpg" alt="Atelier black hoodie">
-  </div>
+    <section class="drop-product" id="drop">
+      <div class="drop-info">
+        <p class="eyebrow">Drop 01</p>
+        <h2>Bluza, którą nosi się z szacunkiem.</h2>
+        <p>
+          Ta bluza nie powstała po to, żeby zniknąć w tłumie. Jest traktowana
+          jak obiekt, nie jak zwykły produkt. Każda sztuka ma własny ciężar,
+          własny detal i własny charakter. Druga taka sama już nie powstanie.
+          To rzecz, którą zakładasz świadomie i nosisz jak coś ważnego.
+        </p>
 
-  <div class="about-text">
-    <p class="eyebrow">THE IDEA</p>
+        <a class="btn" href="#waitlist">Chcę wejść do dropu</a>
+      </div>
 
-    <h2>
-      Quiet pieces.<br>
-      Strong presence.
-    </h2>
+      <div class="product-visual">
+        <img
+          src="hoodie.jpg"
+          alt="Czarna bluza Atelier"
+          loading="lazy"
+          decoding="async"
+        >
+      </div>
+    </section>
 
-    <p>
-      Atelier creates minimal garments built around clean silhouettes,
-      premium fabrics and timeless design. No loud branding. No trends.
-      Only timeless essentials.
-    </p>
-  </div>
-</section>
+    <section class="section manifesto" id="idea">
+      <p class="eyebrow">Idea</p>
+      <h2>Nie robimy hałasu. Robimy rzeczy, które zostają.</h2>
+      <p>
+        Atelier stoi po stronie ciszy, formy i ciężaru materiału. Bez krzyku,
+        bez sezonowego pośpiechu, bez znaków robionych tylko po to, żeby były
+        widoczne z daleka. Liczy się sylwetka, proporcja i energia rzeczy na ciele.
+      </p>
+    </section>
 
-<section class="section waitlist" id="waitlist">
-  <div>
-    <p class="eyebrow">EARLY ACCESS</p>
+    <section class="section about" id="about">
+      <div class="about-copy">
+        <p class="eyebrow">Piece value</p>
+        <h2>To nie seria. To ślad.</h2>
+        <p>
+          Każdy egzemplarz ma być odbierany jak zamknięta kompozycja.
+          Nie chodzi o masową powtarzalność, tylko o obecność. O rzecz,
+          która ma swoją ciszę, ale zostawia mocne wrażenie.
+        </p>
+      </div>
 
-    <h2>Join the waiting list.</h2>
+      <div class="about-note">
+        <div class="note-card">
+          <span class="note-label">Approach</span>
+          <p>
+            Minimal forma. Mocny kontur. Ciemna energia.
+            Jeden obiekt, który nie prosi o uwagę, tylko naturalnie ją zabiera.
+          </p>
+        </div>
+      </div>
+    </section>
 
-    <p>
-      Be the first to access Drop 001 before the public release.
-    </p>
-  </div>
+    <section class="section waitlist" id="waitlist">
+      <div class="waitlist-copy">
+        <p class="eyebrow">Early access</p>
+        <h2>Wejdź przed dropem.</h2>
+        <p>
+          Zostaw mail, jeśli chcesz dostać dostęp wcześniej niż reszta.
+          Bez spamu. Tylko informacja, kiedy obiekt będzie gotowy.
+        </p>
+      </div>
 
-  <form action="https://formspree.io/f/xzdlkgja" method="POST">
-    <input
-      type="email"
-      name="email"
-      placeholder="Email address"
-      required
-    >
+      <form class="waitlist-form">
+        <input type="email" placeholder="Twój e-mail" aria-label="Twój e-mail">
+        <button type="submit">Dołącz</button>
+      </form>
+    </section>
+  </main>
 
-    <button type="submit">JOIN</button>
-  </form>
-</section>
-
-<footer>
-  <p>© Atelier</p>
-  <p>Designed in limited quantities.</p>
-</footer>
-
-<script src="script.js"></script>
+  <footer>
+    <span>Atelier</span>
+    <span>Drop 01 / Black Hoodie</span>
+  </footer>
 </body>
 </html>
